@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jukebox</title>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.2.1.js"></script>
+    <script src='JukeboxProject.js'></script>
+    <link rel='stylesheet' href="JukeboxProject.css"></link>
+    <script src="https://use.fontawesome.com/c1877ec631.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Dank Jukebox</h1>
+    <h2>current songs</h2>
+    <ol id="song_list"></ol>
+    <div class="jukebox">
+        <img id="artwork_image" class="artwork" src=""/>
+        <div id="genre" class="genre">[genre]</div>
+        <div class="profile"></div>
+        <a id="artist_link" href="#">[artist]</a>
+        <div id="track_name" class="currentSong">[track name]</div>
+    <div class="playbar">
+      <i class="fa fa-play-circle-o fa-3x" onclick="jukebox.play()"></i>
+      <i class="fa fa-pause fa-3x" onclick="jukebox.pause()"></i>
+      <i class="fa fa-stop-circle-o fa-3x" onclick="jukebox.stop()"></i>
+      <i class="fa fa-random fa-3x" onclick="jukebox.playRandomSong(); refreshSongDetail(jukebox);"></i>
+      <i class="fa fa-step-forward fa-3x" onclick="jukebox.nextTrack(); refreshSongDetail(jukebox);"></i>
+      <i class="fa fa-step-backward fa-3x" onclick="jukebox.prevTrack(); refreshSongDetail(jukebox);"></i>
+    </div>
+
+  </body>
+</html>

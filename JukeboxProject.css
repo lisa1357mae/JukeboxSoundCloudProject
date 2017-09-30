@@ -1,0 +1,40 @@
+* {
+    background-color: lightblue;
+    text-align: center;
+}
+
+body {
+font-family: 'Josefin Sans', sans-serif;
+border-style: solid;
+  border-width: 35px;
+
+}
+
+h1 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 50px;
+color: #660066;
+
+}
+
+
+h2 {
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+
+}
+
+
+ul {
+   list-style-type: none;
+   border-style: solid;
+
+}
+li {list-style-type: none;
+}
+.playbar {
+border-style: solid;
+border-radius: 25px;
+
+}
